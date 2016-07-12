@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Elemental | CSS Lessons</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/admin.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+     
+                <a class="navbar-brand page-scroll" href="index.html">ELEMENTAL <i class="fa fa-modx modx" aria-hidden="true"></i></a>
+                  <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+            </div>
+               
+            </div>
+            
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a class="page-scroll" href="#editors"></i>HTML+CSS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#elements"> Elements</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#structure"> Structure</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#glossary"> Glossary</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#webira"> IRA Demonstrations</a>
+                    </li>
+                  
+                    
+                </ul>
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="bc.html">Business Communication</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="web.html">Web Development</a></li>
+          </ul>
+        </li>       
+                    <li class="page-scroll">
+                        <a href="html.html">HTML</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a class="page-scroll" href="#top">Back to Top</a>
+                    </li>
+                
+                    <li class="page-scroll">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="resources.html">External Resources</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid" id="top">
+
+                <!-- Page Heading -->
+             <div class="jumbotron" id="editors">
+                <h1>Combining CSS with HTML</h1>
+                <p>Cascading Style Sheets</p>
+                <a class="page-scroll" href="#top">
+                <button type="button" class="btn btn-primary">Back to Top</button></a>
+            </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            HTML puts the content on the page and CSS adds color, style, and layout. We'll walk through how to make a basic website, so you'll need to take a few steps before we write CSS.
+                        </p>
+                        <ol>
+                            <li class="spacing">Create a new folder and save your <span class="green"> index.html</span> file inside of it. <ul>
+                                <li>You need the main structure set up in your <span class="green">index.html</span> file. See HTML course for help. </li>
+                                <li>Add <span class="red"> &lth1&gtHello world!&lt/h1&gt</span> within the body tags so we can see it displayed in the browser.</li>
+                            </ul></li>
+                            <li class="spacing">Open <span class="green">index.html</span> in the browser. It should look something like this:</li><br />
+                            <img class="spacing" src="images/hello.jpg">
+                            <li class="spacing">In your text editor, create a new file and save this one as <span class="green">style.css</span>. Make sure you save it to the same folder containing <span class="green">index.html</span>. Your folder should look something like this:</li>
+                      <div class="row">
+                         <div class="col-lg-6">
+                            <img class="spacing" src="images/folder.jpg">
+                         </div>
+                         <div class="col-lg-6">
+                            <p>Side note: if you want to add images to your website, you should create an <span class="green">images</span> folder inside the root folder with the index and style sheet. </p>
+                         </div>
+                      </div>
+                            <li class="spacing">The next step is to link the <span class="green">index.html</span> and <span class="green">style.css</span> sheets together.<ul>
+                                <li>Inside of the &lthead&gt tags in your <span class="green">index.html</span> file, add a &ltlink&gt tag.</li>
+                            </ul> The &ltlink&gt tag should look exactly like this:<ul><li class="red">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt</li></ul>Below is an image with the link that should help you visualize it.</li>
+                            <img class="spacing" src="images/linkCss.jpg">
+                            <li class="spacing">At this point, the HTML and blank CSS sheets should now be linked. The styling can now begin.</li>
+                        </ol>
+                    </div>
+                </div>
+            <div class="jumbotron" id="elements">
+                <h1>Elements</h1>
+                <p>Tags and syntax</p>
+                <a class="page-scroll" href="#top">
+                <button type="button" class="btn btn-primary">Back to Top</button></a>
+            </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <p >
+                            Just like HTML, CSS has its own syntax. The way that CSS works is that you have to reference a tag from your HTML, and then you have to style it.
+                        </p>
+                            <hr>
+                        <p>For example: <br />Let's say that you want the words "Hello world!" to be green. Here's what you do.</p>
+                        <ol>
+                            <li class="spacing">Go to the blank CSS sheet in your text editor.</li>
+                            <li class="spacing">In <span class="green">style.css</span>, we have to reference the words we want green. They were written inside of &lth1&gt tags, so we can start with simply typing the name of the tag. The only thing in your <span class="green">style.css</span> sheet is now: <br /><span class="red">h1</span> </li>
+                            <li class="spacing">CSS uses brackets just like HTML, but they are <i>curly</i> brackets {}. Once the tag (<span class="red">h1</span>) is referenced, we can set up our styling by opening and closing the brackets. The only thing in your <span class="green">style.css</span> sheet is now: <br /><span class="red">h1{}</span></li>
+                            <li class="spacing">Just like HTML, CSS ignores multiple spaces in a row, and it also ignores line breaks. For visual clarity, move the closing curly bracket down before we start styling. The only thing in your <span class="green">style.css</span> sheet is now: <br /><span class="red">h1 {<br /><br />}</span></li>
+                            <li class="spacing">We want to change the color of the words inside the &lth1&gt tags, so the syntax for this is <span class="babyblue">color: green;</span> The only thing in your <span class="green">style.css</span> sheet is now: <br /><span class="red">h1 {<br /><span class="babyblue">color: green;</span><br />}</span><br />In CSS, the first selector, being <span class="babyblue">color:</span>, determines what will be styled. There is a colon to declare the beginning of the styling. Everything after the colon is the style, and to declare the end of that statement, CSS requires a semi-colon, so it looks like <span class="babyblue">color: green;</span></li>
+                            <li class="spacing"><span class="red"> Why does CSS require a semi-colon?</span> Because more than one type of styling can be done.<br />To change the font, you can use <span class="babyblue">font-family</span> and <span class="babyblue">font-size</span>. Add this extra styling to the h1.</li>
+                            <li class="spacing">Your <span class="green">style.css</span> sheet should look like: <br /><span class="red">h1 {<br /><span class="babyblue">color: green;</span><br /><span class="babyblue">font-family: arial;</span><br /><span class="babyblue">font-size: 25px;</span><br />}</span><br />and your <span class="green">index.html</span> should show up as <h1 class="tutorial">Hello world!</h1></li>
+                        </ol>
+                    </div>
+                </div>
+            <div class="jumbotron" id="structure">
+                <h1>Structure</h1>
+                <p>How to organize your CSS</p>
+                <a class="page-scroll" href="#top">
+                <button type="button" class="btn btn-primary">Back to Top</button></a>
+            </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <p class="spacing">
+                           CSS stands for <span class="green">Cascading Style Sheets</span>, and the cascading means that it goes from <sup>TOP</sup> to <sub>BOTTOM.</sub> So, here's an example to keep in mind.
+                        </p>
+                        <p class="spacing">
+                            Let's say that you have this:<br />
+                            <span class="red">h1 {<br /><span class="babyblue">color: green;</span><br /><span class="babyblue">font-family: arial;</span><br /><span class="babyblue">font-size: 25px;</span><br />}</span><br />So, you add other code, and lower in your stylesheet, you want to make an adjustment. You add:<br />
+                            <span class="red">h1 {<br /><span class="babyblue">color: blue;</span><br /><span class="babyblue">font-size: 15px;</span><br />}</span>
+                        </p>
+                        <p>
+                            <span class="blue"> So here's what'll happen</span>:<br />Since CSS is <i>Cascading</i>, it'll read the code for h1 that you typed first. When it goes down on the stylesheet and runs into the second h1 code,<span class="red"> the second occurence will overwrite the first</span>, and the <span class="babyblue">font-size</span> will change to 15, and the <span class="babyblue">color</span> will change to blue.<br />What <i>won't</i> change is the font-family, because the second occurence did not make any new adjustments, so the <span class="babyblue">arial</span> will stay in effect.
+                        </p>
+                        <hr>
+                        <p>
+                            Best practices for writing CSS are that the tags that you reference in CSS should be in the same order that your HTML is written, so <span class="green">body</span> styling should go near the top, and you shouldn't style the &ltp&gt or &ltimg&gt until later.
+                        </p>
+                    </div>
+                </div>
+            
+            <div class="jumbotron" id="glossary">
+                <h1>Glossary</h1>
+                <p>Syntax and extra info</p>
+                <a class="page-scroll" href="#top">
+                <button type="button" class="btn btn-primary">Back to Top</button></a>
+            </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            You don't have to memorize every single style and style reference, just Google things you don't understand. Here is a list of useful tools and tips when styling an HTML document.
+                        </p>
+                        <ul>
+                            <li>Two very useful attributes in CSS are <span class="green">classes</span> and <span class="green">id's</span>.<ul><li>A Class can be added to <i>any</i> tag, so that you can apply CSS to multiple elements.</li><li>An id can be added <i>once</i> to any element, because just like a phone number or social security number, there can only be one. <span class="red">Both class and id should be non-numerical characters.</span></li></ul> Here is an example of what a class in a &ltp&gt tag would look like:<br /><span class="red" style="text-decoration: underline;">index.html</span><br /><span class="green">&ltp class="blue"&gtThis is a paragraph.&lt/p&gt</span><br /><span class="green">&ltp id="red"&gtThis is another paragraph.&lt/p&gt</span></li>
+                            <span class="green">&ltp class="blue"&gtThis is the third paragraph.&lt/p&gt</span><br /><hr>
+                 <div class="row">
+                    <div class="col-lg-6">
+                    <span class="red" style="text-decoration: underline;">style.css</span><br /><span class="blue">.blue</span><span class="babyblue"> { <br />color: blue;<br /> }</span>
+                    <br /><span class="blue">#red</span><span class="babyblue"> { <br />color: red;<br /> }</span>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><span class="red">Why is it </span>.blue <span class="red"> and </span>#red?<br />Well, in CSS you can reference any tag by just typing it in like we did with &lth1&gt in the Structure section. However, to tell the computer that you're working with a <i>class</i> instead of a tag, you put a period before the name of the <span class="babyblue">class</span>, hence, .blue, and a pound sign (#) before the name of the <span class="babyblue"> id.</span></p>
+                    </div>
+                </div>      The end result of the 3 paragraphs should look like this in the browser:<br /><span style="color: blue;">This is a paragraph.</span><br /><span class="red">This is another paragraph.</span></li><br /><span style="color: blue;">This is the third paragraph.</span>   </li><hr>
+
+                            <li class="spacing">Although most styling should be done in the style.css sheet, CSS can be written directly on the HTML document like this: <ul><li>The first way is by going to the &lthead&gt of your HTML file, and using &ltstyle&gt tags. It will look something like this:<br />
+                            <span class="green">&ltstyle&gt<br /><span class="babyblue">p {<br />color: blue;<br />}<br /></span>&lt/style&gt</span></span></li><li>The second way is <i>inline styling</i>, which uses classes and the &ltspan&gt tag. Here's an example:<br /><span class="green">&ltp&gtToday, I went to the &ltspan style="color: blue;"&gt<span style="color: blue;"> grocery store</span>&lt/span&gt and bought some eggs.&lt/p&gt</span></li></ul>The &ltspan&gt tag does nothing by itself, but by adding the <i>style</i> attribute, it becomes a styling tool in HTML.</li>
+                            <li class="spacing">Using a selector in CSS, you can style multiple elements at once by separating them with commas. This looks like this:<br /><span class="babyblue"> h1, h2, h3 { <br />font-family: arial;<br /> }</span></li>
+                            <li class="spacing">If you want to apply a style to ALL elements on a page, you use the * selector, like this:<br /><span class="babyblue"> * { <br />color: red;<br /> }</span></li>
+                            <li class="spacing">When changing text color or background color, you <i>can</i> use basic color names like <span class="green">blue, green, red,</span> or <span class="green">black</span>. However, using <i>hexadecimals</i> is best practice. This looks like this:<br /><span class="babyblue"> h1 { <br />background-color: #33B76C;<br /> }</span> <br />Check out <a class="red" target="_blank" href="https://coolors.co/"> this website</a> that gives you exactly what you need when looking for a color.</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="jumbotron" id="webira">
+                <h1>IRA Demonstrations</h1>
+                <p>Practice making a website on the fly</p>
+                <a class="page-scroll" href="#top">
+                <button type="button" class="btn btn-primary">Back to Top</button></a>
+            </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            If there is a web development portion of the IRA, it might consist of students building a website from scratch in a small time frame.<br /><span class="green">Remember</span>: The best way to learn to code and get good at it is to practice continually. Try to build these examples exactly as they are for practice.
+                        </p>
+                        <hr>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/ira1.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/ira2.jpg">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/ira3.jpg">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/ira4.jpg">
+                    </div>
+                </div>
+                <!-- /.row -->
+                 <div class="row">
+                    <div class="col-lg-12">
+                      
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/agency.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://use.fontawesome.com/4fec9888c8.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
