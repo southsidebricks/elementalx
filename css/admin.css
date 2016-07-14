@@ -273,7 +273,31 @@ h1{
 }
 
 
-@media (max-width: 768px){
+/*TABLET*/
+
+@media (max-width: 920px){
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #FF8432;
+    background-color: #636363;
+   }
+
+.modx {
+    color: #FF8432;
+}
+.navbar {
+    background-color: #636363;
+    padding-right: 15px;
+}
+body {
+    background-color: #636363;
+    }
+}
+
+
+
+
+/*MOBILE PHONE*/
+@media (max-width: 430px){
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #A6D9F6;
     background-color: #434951;

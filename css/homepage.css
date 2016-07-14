@@ -26,6 +26,11 @@ header {
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: #0B323F;
 }
+#mainNav, .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
+    color: #eee;
+    background-color: #0B323F;
+    font-size: 20px;
+}
 img {
     margin-top: 15px;
     height: 180px;
@@ -89,18 +94,105 @@ hr {
 }
 
 
-@media (min-width: 768px){}
-#mainNav, .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
-    color: #eee;
-    background-color: #0B323F;
+/*TABLET */
+
+
+@media (max-width: 920px){
+    #mainNav, .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
+    color: white;
+    background-color: #636363;
+    font-size: 20px;
+}
+.navbar-default.affix .navbar-header .navbar-brand {
+    color: #FF8432;
+    font-size: 14px;
 }
 
-@media (max-width: 768px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #000;
+}
+
+body {
+    background-color: #636363;
+    color: #eee;
+}
+    #about {
+    background-color: #636363;
+    background: url(../images/side1.jpg);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    opacity: .88;
+}
+
+#services {
+    background-color: rgba(0, 0, 0, .7);
+    color: #eee;
+    background-color: #636363;
+    border-top: 3px solid black;
+}
+.text-muted{
+    color: #cecece;
+}
+    .navbar-default .navbar-header .navbar-brand {
+    color: black;
+    }
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #FF8432;
+    background-color: #636363;
+   }
+   .text-primary, a {
+    color: #000;
+
+}
+hr {
+    border-color: #FF8432;
+    border-width: 3px;
+    max-width: 50px;
+}
+ol, ul {
+    font-size: 20px;
+}
+a:hover {
+    transition: .5s ease;
+    text-decoration: none;
+    color: #FF8432;
+}
+.modx {
+    color: #FF8432;
+}
+
+.blue {
+    color: #FF8432;
+}
+.header-content-inner{
+    border: 2px solid black;
+    padding: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background: url(../images/side1.jpg);
+    opacity: .8;
+}
+
+}
+
+
+
+
+/*MOBILE PHONE*/
+
+@media (max-width: 430px){
     #mainNav, .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus {
     color: #eee;
     background-color: #434951;
     font-size: 20px;
 }
+
+.navbar-default.affix .navbar-header .navbar-brand {
+    color: #A6D9F6;
+    font-size: 14px;
+}
+
 body {
     background-color: #000;
     color: #eee;
