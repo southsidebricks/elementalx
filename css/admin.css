@@ -291,6 +291,18 @@ h1{
 body {
     background-color: #636363;
     }
+    
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        transition: .5s ease;
+        background-color: #FF8432 !important;
+    }
+
 }
 
 
